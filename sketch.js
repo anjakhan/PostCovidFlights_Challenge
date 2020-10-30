@@ -26,7 +26,7 @@ const options = {
 }
 
 function preload() {
-  //flightData = loadTable('covid_impact_on_airport_traffic.csv', 'header');
+  flightData = loadTable('covid_impact_on_airport_traffic.csv', 'header');
 }
 
 function setup() {
