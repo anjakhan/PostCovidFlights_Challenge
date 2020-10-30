@@ -1,9 +1,16 @@
-html, body {
+body {
   margin: 0;
-  padding: 0;
+  padding: 10px 50px;
+  background: linear-gradient(to right, rgba(168, 145, 211, 0.5), rgba(163, 253, 171, 0.5));
 }
+
 canvas {
-  display: block;
+ display: block;
+}
+
+#mappa {
+  border: 1px solid;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 .slidecontainer {
@@ -13,33 +20,35 @@ canvas {
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 15px;
+  height: 10px;
   border-radius: 5px;
-  background: #d3d3d3;
+  background: #fafafa;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  box-shadow: 3px 3px 6px #888888;
 }
 
 .slider:hover {
-  opacity: 1;
+  opacity: 0.9;
+  box-shadow: 3px 3px 5px #888888;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: red;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: red;
   cursor: pointer;
 }
